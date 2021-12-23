@@ -1,0 +1,1 @@
+spark-submit --master local[*] --files "application.properties" --files "log4j.properties" --class com.danone.pubSubProject.Main --driver-java-options  "-Dconfig.file=application.properties -Dlog4j.configuration=log4j.properties" "pubSubProject-1.0-SNAPSHOT.jar"
